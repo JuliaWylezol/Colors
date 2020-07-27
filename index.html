@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coloors</title>
+  <link href='style.css' rel='stylesheet'>
+</head>
+<body>
+  <section class='colorDivs'>
+    <div class='color' data-index='0'>
+      <h2 class='colorHex'>Hex</h2>
+      <div class='controls'>
+        <button class='adjust'><i class='fas fa-sliders-h'></i> </button>
+        <button class='open' id='open0'><i class='fas fa-lock-open' ></i></button>
+        <button class='lock' id='lock0'><i class='fas fa-lock' ></i> </button>
+      </div>
+      <div class='sliders'>
+        <button class="close">X</button>
+        <span>Hue</span>
+        <input type='range' min='0' max='360' step="1" class='hue-input' name='hue' data-hue='0'>
+        <span>Brightness</span>
+        <input type='range' min='0' max='1' step="0.01" class='bright-input' name='bright'  data-bright='0'>
+        <span>Saturation</span>
+        <input type='range' min='0' max='1' step="0.01" class='saturation-input' name='saturation' data-saturation='0'>
+      </div>
+    </div>
+    <div class='color' data-index='1'>
+      <h2 class='colorHex'>Hex</h2>
+      <div class='controls'>
+        <button class='adjust'><i class='fas fa-sliders-h'></i> </button>
+        <button class='open' id='open1'><i class='fas fa-lock-open' ></i> </button>
+        <button class='lock' id='lock1'><i class='fas fa-lock' ></i> </button>
+      </div>
+      <div class='sliders'>
+        <button class="close">X</button>
+        <span>Hue</span>
+        <input type='range' min='0' max='360' step="1" class='hue-input' name='hue' data-hue='1'>
+        <span>Brightness</span>
+        <input type='range' min='0' max='1' step="0.01" class='bright-input' name='bright' data-bright='1'>
+        <span>Saturation</span>
+        <input type='range' min='0' max='1' step="0.01" class='saturation-input' name='saturation' data-saturation='1'>
+      </div>
+    </div>
+    <div class='color' data-index='2'>
+      <h2 class='colorHex'>Hex</h2>
+      <div class='controls'>
+        <button class='adjust'><i class='fas fa-sliders-h'></i> </button>
+        <button class='open' id='open2'><i class='fas fa-lock-open' ></i>  </button>
+        <button class='lock' id='lock2'><i class='fas fa-lock' ></i> </button>
+      </div>
+      <div class='sliders'>
+        <button class="close">X</button>
+        <span>Hue</span>
+        <input type='range' min='0' max='360' step="1" class='hue-input' name='hue' data-hue='2'>
+        <span>Brightness</span>
+        <input type='range' min='0' max='1' step="0.01" class='bright-input' name='bright' data-bright='2'>
+        <span>Saturation</span>
+        <input type='range' min='0' max='1' step="0.01" class='saturation-input' name='saturation' data-saturation='2'>
+      </div>
+    </div>
+    <div class='color' data-index='3'>
+      <h2 class='colorHex'>Hex</h2>
+      <div class='controls'>
+        <button class='adjust'><i class='fas fa-sliders-h'></i> </button>
+        <button class='open' id='open3'><i class='fas fa-lock-open' ></i> </button>
+        <button class='lock' id='lock3'><i class='fas fa-lock' ></i> </button>
+      </div>
+      <div class='sliders'>
+        <button class="close">X</button>
+        <span>Hue</span>
+        <input type='range' min='0' max='360' step="1" class='hue-input' name='hue' data-hue='3'>
+        <span>Brightness</span>
+        <input type='range' min='0' max='1' step="0.01" class='bright-input' name='bright' data-bright='3'>
+        <span>Saturation</span>
+        <input type='range' min='0' max='1' step="0.01" class='saturation-input' name='saturation' data-saturation='3'>
+      </div>
+    </div>
+    <div class='color' data-index='4'>
+      <h2 class='colorHex'>Hex</h2>
+      <div class='controls'>
+        <button class='adjust'><i class='fas fa-sliders-h'></i> </button>
+        <button class='open' id='open4'><i class='fas fa-lock-open' ></i> </button>
+        <button class='lock' id='lock4'><i class='fas fa-lock' ></i> </button>
+      </div>
+      <div class='sliders'>
+        <button class="close">X</button>
+        <span>Hue</span>
+        <input type='range' min='0' max='360' step="1" class='hue-input' name='hue' data-hue='4'>
+        <span>Brightness</span>
+        <input type='range' min='0' max='1' step="0.01" class='bright-input' name='bright' data-bright='4'>
+        <span>Saturation</span>
+        <input type='range' min='0' max='1' step="0.01" class='saturation-input' name='saturation' data-saturation='4'>
+      </div>
+    </div>
+  </section>
+  <section class='panel'>
+    <div class="library-panel">
+      <button class="library"><i class='fas fa-book-open'></i></button>
+      <p>Library</p>
+    </div>
+    <div class="generate-panel">
+      <button class="generate"><i class='fas fa-sync'></i></button>
+      <p>Generate </p>
+    </div>
+    <div class="save-panel">
+      <button class="save"><i class="fas fa-save"></i></button>
+      <p>Save</p>
+    </div>
+  </section>
+  <section class="copy-container">
+    <div class="copy-popup">
+      <h3>Copied to clipboard!</h3>
+      <h4>&#128077;</h4>
+    </div>
+  </section>
+  <section class="save-container">
+      <div class="save-popup">
+        <button class="close-save">X</button>
+        <h4>Give a name to your pallete!</h4>
+        <input type='text' max-length="35" min-length='1' class="save-name">
+        <button type="submit" class="submit-save">Save</button>
+      </div>
+  </section>
+  <section class="library-container">
+    <div class="library-popup">
+      <button class="close-library">X</button>
+      <h4>Pick your pallete</h4>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js" integrity="sha512-M+hXwltZ3+0nFQJiVke7pqXY7VdtWW2jVG31zrml+eteTP7im25FdwtLhIBTWkaHRQyPrhO2uy8glLMHZzhFog==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js" integrity="sha512-yocoLferfPbcwpCMr8v/B0AB4SWpJlouBwgE0D3ZHaiP1nuu5djZclFEIj9znuqghaZ3tdCMRrreLoM8km+jIQ==" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>
